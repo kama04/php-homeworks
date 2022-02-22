@@ -16,4 +16,4 @@ function similaritySymbols(string $str1, string $str2)
 }
 
 
-echo similaritySymbols(" текст", " текст");
+echo similaritySymbols("qwert", "Qwert");

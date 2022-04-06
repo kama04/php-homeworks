@@ -6,12 +6,12 @@ while(false !== ($file = readdir($dir))) {
 
 if($file =='.' || $file == '..') {continue;}
 
-$fullPath = $direct .'/'. $file;
+$fllePath = $direct .'/'. $file;
 
-if(is_dir($fullPath)) {
+if(is_dir($fllePath)) {
 echo "d: ".$file."  ".PHP_EOL;
 
-prFlDr($fullPath);
+prFlDr($fllePath);
 }
 else {
 echo "  f: ".$file."   ".PHP_EOL;

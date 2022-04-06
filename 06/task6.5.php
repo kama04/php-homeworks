@@ -4,12 +4,12 @@
 function recar($arr, $elem) {
     $result = array();
 
-    foreach($arr as $k => $v) {
-        if ($v == $elem) $result[$k]=$v;
+    foreach($arr as $key => $v) {
+        if ($v == $elem) $result[$key]=$v;
         else if (is_array($v))
         {
-            $ret=recar($v, $elem);
-            if(count($ret)) $result[$k]=$ret;
+            $r=recar($v, $elem);
+            if(count($r)) $result[$key]=$r;
         }
     }
     return $result;
